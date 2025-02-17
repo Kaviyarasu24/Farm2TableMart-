@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farm2TableMart - Fruits & Vegetables</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #4CAF50;
+            padding: 10px 20px;
+        }
+        .navbar ul {
+            list-style: none;
+            display: flex;
+            padding: 0;
+        }
+        .navbar li {
+            margin-right: 20px;
+        }
+        .navbar a {
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+            padding: 8px 15px;
+        }
+        .navbar a:hover {
+            background-color: #080803;
+            border-radius: 5px;
+        }
+        .cart-icon {
+            background: white;
+            padding: 5px 10px;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+        .search-bar {
+            padding: 5px;
+            width: 200px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+        }
+        .product-card {
+            background: rgb(252, 252, 252);
+            padding: 15px;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+            width: 250px;
+        }
+        .product-card img {
+            width: 100%;
+            border-radius: 10px;
+            transition: transform 0.3s ease-in-out;
+        }
+        .product-card img:hover {
+            transform: scale(1.1);
+        }
+        .product-card button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 5px;
+            transition: 0.3s;
+        }
+        .product-card button:hover {
+            background-color: #0b0c0b;
+        }
+        footer {
+            text-align: center;
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="fruits&vegetable.html">Fruits & Vegetables</a></li>
+            <li><a href="#">Dairy & Bakery</a></li>
+            <li><a href="#">Snacks</a></li>
+            <li><a href="#">Meat & Seafood</a></li>
+            <li><a href="contact_us.html">Contact Us</a></li>
+            <li><a href="login.html">Login</a></li>
+        </ul>
+        <input type="text" class="search-bar" placeholder="Search products...">
+        <div class="cart-icon">🛒</div>
+    </nav>
+    
+    <div class="container">
+        <div class="product-card">
+            <h2>Bananas</h2>
+            <img alt="Bunch of ripe bananas" height="250" src="assest/banana.jpg" width="250"/>
+            <p>Sweet and ripe bananas.</p>
+            <p class="price">₹0.59 / kg</p>
+            <label for="quantity">Select Quantity:</label>
+            <select id="quantity">
+              <option value="0.5">0.5 kg</option>
+              <option value="1">1 kg</option>
+              <option value="2">2 kg</option>
+            </select>
+            <button>Buy</button>
+            <button>Add to Cart</button>
+        </div>
+        
+        <div class="product-card">
+            <h2>tomatoes</h2>
+        <img alt="Fresh green broccoli" height="250" src="assest/tomatoes.jpg" width="250"/>
+        <p>Fresh Tomatoes.</p>
+        <p class="price">₹1.99 / kg</p>
+        <label for="quantity">Select Quantity:</label>
+        <select id="quantity">
+          <option value="0.5">0.5 kg</option>
+          <option value="1">1 kg</option>
+          <option value="2">2 kg</option>
+        </select>
+        <button>Buy</button>       
+         <button>Add to Cart</button>
+        </div>
+        
+        <div class="product-card">
+            <h2>Carrots</h2>
+        <img alt="Bunch of fresh carrots" height="250" src="assest/carrot.jpg" width="250"/>
+        <p>Crunchy and fresh carrots.</p>
+        <p class="price">₹1.29 / kg</p>
+        <label for="quantity">Select Quantity:</label>
+        <select id="quantity">
+          <option value="0.5">0.5 kg</option>
+          <option value="1">1 kg</option>
+          <option value="2">2 kg</option>
+        </select>
+        <button>Buy</button>
+        <button>Add to Cart</button>
+        </div>
+
+        <div class="product-card">
+            <h2>Red Apples</h2>
+        <img alt="Fresh red apples" height="250" src="assest/apple.jpg" width="250"/>
+        <p>Fresh and juicy red apples.</p>
+        <p class="price">₹3.99 / kg</p>
+        <label for="quantity">Select Quantity:</label>
+        <select id="quantity">
+          <option value="0.5">0.5 kg</option>
+          <option value="1">1 kg</option>
+          <option value="2">2 kg</option>
+        </select>
+        <button>Buy</button>
+        <button>Add to Cart</button>
+        </div>
+
+        <div class="product-card">
+            <h2>Cucumbers</h2>
+        <img alt="Fresh cucumbers" height="250" src="assest/cucumber.jpg" width="250"/>
+        <p>Cool and crisp cucumbers.</p>
+        <p class="price">₹0.99 / kg</p>
+        <label for="quantity">Select Quantity:</label>
+        <select id="quantity">
+          <option value="0.5">0.5 kg</option>
+          <option value="1">1 kg</option>
+          <option value="2">2 kg</option>
+        </select>
+        <button>Buy</button>
+        <button>Add to Cart</button>
+        </div>
+
+        <div class="product-card">
+            <h2>Spinach</h2>
+        <img alt="Bunch of spinach leaves" height="250" src="assest/spinach.jpg" width="250"/>
+        <p>Fresh and healthy spinach.</p>
+        <p class="price">₹2.49 / kg</p>
+        <label for="quantity">Select Quantity:</label>
+        <select id="quantity">
+          <option value="0.5">0.5 kg</option>
+          <option value="1">1 kg</option>
+          <option value="2">2 kg</option>
+        </select>
+        <button>Buy</button>
+        <button>Add to Cart</button>
+        </div>
+
+        <div class="product-card">
+            <h2>Strawberries</h2>
+        <img alt="Fresh strawberries in a basket" height="250" src="assest/strawbarry.jpg" width="250"/>
+        <p>Sweet  strawberries.</p>
+        <p class="price">₹4.99 / kg</p>
+        <label for="quantity">Select Quantity:</label>
+        <select id="quantity">
+          <option value="0.5">0.5 kg</option>
+          <option value="1">1 kg</option>
+          <option value="2">2 kg</option>
+        </select>
+        <button>Buy</button>
+        <button>Add to Cart</button>
+        </div>
+
+        <div class="product-card">
+            <h2>Mango</h2>
+        <img alt="Fresh Mango" height="250" src="assest/mango.jpg" width="250"/>
+        <p>Fresh and Sweet mango</p>
+        <p class="price">₹1.49 / kg</p>
+        <label for="quantity">Select Quantity:</label>
+        <select id="quantity">
+          <option value="0.5">0.5 kg</option>
+          <option value="1">1 kg</option>
+          <option value="2">2 kg</option>
+        </select>
+        <button>Buy</button>
+        <button>Add to Cart</button>
+        </div>
+
+        <div class="product-card">
+            <h2>Grapes</h2>
+        <img alt="Bunch of fresh grapes" height="250" src="assest/Grapes.jpg" width="250"/>
+        <p>Sweet and juicy grapes.</p>
+        <p class="price">₹2.99 / kg</p>
+        <label for="quantity">Select Quantity:</label>
+        <select id="quantity">
+          <option value="0.5">0.5 kg</option>
+          <option value="1">1 kg</option>
+          <option value="2">2 kg</option>
+        </select>
+        <button>Buy</button>
+        <button>Add to Cart</button>
+        </div>
+
+        <div class="product-card">
+            <h2>Oranges</h2>
+        <img alt="Fresh oranges in a basket" height="250" src="assest/Oranges.jpg" width="250"/>
+        <p>Fresh and tangy oranges.</p>
+        <p class="price">₹3.49 / kg</p>
+        <label for="quantity">Select Quantity:</label>
+        <select id="quantity">
+          <option value="0.5">0.5 kg</option>
+          <option value="1">1 kg</option>
+          <option value="2">2 kg</option>
+        </select>
+        <button>Buy</button>
+        <button>Add to Cart</button>
+        </div>
+
+        <div class="product-card">
+            <h2>potato</h2>
+        <img alt="Fresh potatoes" height="250" src="assest/potato.jpg" width="250"/>
+        <p>Fresh potatoes</p>
+        <p class="price">₹1.99 / kg</p>
+        <label for="quantity">Select Quantity:</label>
+        <select id="quantity">
+          <option value="0.5">0.5 kg</option>
+          <option value="1">1 kg</option>
+          <option value="2">2 kg</option>
+        </select>
+        <button>Buy</button>
+        <button>Add to Cart</button>
+        </div>
+
+        <div class="product-card">
+            <h2>Green Chilles</h2>
+            <img alt="Bunch of green Chilles" height="250" src="assest/green chilli.jpg" width="250"/>
+            <p>Bunch of green Chilles.</p>
+            <p class="price">₹0.99 / bunch</p>
+            <label for="quantity">Select Quantity:</label>
+            <select id="quantity">
+              <option value="0.5">0.5 kg</option>
+              <option value="1">1 kg</option>
+              <option value="2">2 kg</option>
+            </select>
+            <button>Buy</button>
+            <button>Add to Cart</button>
+        </div>
+
+        <div class="product-card">
+            <h2>Drumstick</h2>
+        <img alt="Fresh Drumstick" height="250" src="assest/drumstick.jpg" width="250"/>
+        <p>Fresh Drumstick.</p>
+        <p class="price">₹1.99 / kg</p>
+        <label for="quantity">Select Quantity:</label>
+        <select id="quantity">
+          <option value="0.5">0.5 kg</option>
+          <option value="1">1 kg</option>
+          <option value="2">2 kg</option>
+        </select>
+        <button>Buy</button>
+        <button>Add to Cart</button>
+        </div>
+
+
+        <div class="product-card">
+            <h2>Blueberries</h2>
+        <img alt="Fresh blueberries in a basket" height="250" src="assest/blueberry.jpg" width="250"/>
+        <p>Sweet and juicy blueberries.</p>
+        <p class="price">₹5.99 / kg</p>
+        <label for="quantity">Select Quantity:</label>
+        <select id="quantity">
+          <option value="0.5">0.5 kg</option>
+          <option value="1">1 kg</option>
+          <option value="2">2 kg</option>
+        </select>
+        <button>Buy</button>
+        <button>Add to Cart</button>
+        </div>
+
+
+        <div class="product-card">
+            <h2>Green Beans</h2>
+            <img alt="Fresh green beans" height="250" src="assest/Green Beans.jpg" width="250"/>
+            <p>Fresh and crunchy green beans.</p>
+            <p class="price">₹1.99 / kg</p>
+            <label for="quantity">Select Quantity:</label>
+            <select id="quantity">
+              <option value="0.5">0.5 kg</option>
+              <option value="1">1 kg</option>
+              <option value="2">2 kg</option>
+            </select>
+            <button>Buy</button>
+            <button>Add to Cart</button>
+        </div>
+    </div>
+    
+    <footer>
+        <p>© 2025 Farm2TableMart. All rights reserved.</p>
+    </footer>
+</body>
+</html>
